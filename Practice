@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main3 {
+    public static void main(String[] args) {
+
+        double StudentGPA = 2.00;
+        int StudentAge;
+
+        String StudentFirstName = "Napoleon";
+        String StudentLastName = "Bonaparte";
+
+        System.out.println(StudentFirstName + " " + StudentLastName + " " + "has a GPA of" + " " + StudentGPA);
+        System.out.println("What do you want to update it to?" );
+
+        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        StudentGPA = input.nextDouble();
+
+        System.out.println(StudentFirstName + " " + StudentLastName + " Now has a GPA of " + StudentGPA);
+        System.out.println("Enter the Student's Age");
+
+        StudentAge = input.nextInt();
+
+        System.out.println(StudentFirstName + " Is now " + StudentAge + " Years old ");
+        System.out.println("Where does " + StudentFirstName + " lives? ");
+
+        String str = sc.nextLine();
+
+        System.out.println(StudentFirstName + " Lives in " +str);
+
+    }
+}
